@@ -1,0 +1,9 @@
+order deny,allow
+deny from all
+AuthType Basic
+AuthName "Restricted Content"
+AuthUserFile /etc/apache2/.htpasswd
+Require valid-user
+allow from 192.168.1.
+allow from 83.76.180.217
+Satisfy any
